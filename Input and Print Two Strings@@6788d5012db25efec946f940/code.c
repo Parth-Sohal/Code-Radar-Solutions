@@ -2,7 +2,7 @@
 #include<string.h>
 int main() {
     char str[30];
-    scanf("%[^\n]s",str);
+    gets(str);
     printf("You entered: %s",str);
     return 0;
 }
