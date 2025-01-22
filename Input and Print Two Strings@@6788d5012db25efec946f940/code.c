@@ -3,6 +3,6 @@
 int main() {
     char str[30];
     scanf("%[^\n]s",str);
-    printf("%s",str);
+    printf("You entered: %s",str);
     return 0;
 }
