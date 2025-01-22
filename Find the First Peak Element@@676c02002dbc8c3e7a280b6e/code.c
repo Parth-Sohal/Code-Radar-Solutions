@@ -5,7 +5,6 @@ int peak(int arr[],int n){
             return arr[i];
         }
     }
-    return arr[0];
 }
 
 int main() {
