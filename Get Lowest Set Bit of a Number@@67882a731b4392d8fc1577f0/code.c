@@ -4,11 +4,9 @@ void lowest(int n){
     while(1){
         if(n & (1<<k) == 1){
             printf("%d",k);
-            break;
+            return;
         }
-        else{
-            k++;
-        }
+         k++;
     }
 }
 int main() {
