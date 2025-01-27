@@ -7,6 +7,7 @@ int main() {
     while(1){
         if((n)&(1<<k)==power){
             printf("%d",k);
+            break;
         }
         k++;
         power = power*2;
