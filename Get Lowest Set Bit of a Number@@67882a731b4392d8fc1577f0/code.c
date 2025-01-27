@@ -1,17 +1,15 @@
 #include <stdio.h>
-void lowest(int n){
-    int k = 0;
-    while(1){
-        if(n & (1<<k) == 1){
-            printf("%d",k);
-            return;
-        }
-         k++;
-    }
-}
 int main() {
     int n;
     scanf("%d",&n);
-    lowest(n);
+    int k = 0;
+    int power = 1;
+    while(1){
+        if((n)&(1<<k)==power){
+            printf("%d",k);
+        }
+        k++;
+        power = power*2;
+    }
     return 0;
 }
