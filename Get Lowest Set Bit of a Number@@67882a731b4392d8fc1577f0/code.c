@@ -10,7 +10,7 @@ int main() {
             break;
         }
         i++;
-        k<<i;
+        k = k<<i;
     }
     return 0;
 }
