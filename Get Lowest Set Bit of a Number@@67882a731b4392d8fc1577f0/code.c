@@ -3,13 +3,17 @@
 int main() {
     int n;
     scanf("%d",&n);
+    int i = 1;
+    int result = 0;
     int k = 1;
     while(k<n){
-        if(n & k){
-            printf("%d",k);
+        if((n & k)!=0){
+            result = i; 
             break;
         }
-        k<<1;
+        i++;
+        k<<i;
     }
+    printf("%d",i);
     return 0;
 }
