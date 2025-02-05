@@ -3,9 +3,9 @@
 int main() {
     int num;
     scanf("%d",&num);
-    int post ;
-    scanf("%d",&post);
-    num = num >> post;
-    printf("%d",(num&1));
+    int i;
+    scanf("%d",&i);
+    int result = num>>i;
+    printf("%d",result&1);
     return 0;
 }
