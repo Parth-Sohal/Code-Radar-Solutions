@@ -1,7 +1,7 @@
 #include <stdio.h>
 int leapYear(int a){
     if(a%400==0){
-        return true;
+        return 1;
     }
     if(a%4==0 && a%100!=0){
         return 1;
