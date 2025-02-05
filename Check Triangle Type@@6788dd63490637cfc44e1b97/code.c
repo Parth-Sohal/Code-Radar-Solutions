@@ -2,7 +2,7 @@
 
 int main() {
     int a,b,c;
-    if((a+b>c) && (b+c>a) && (a+c>>b)){
+    if((a+b>c) && (b+c>a) && (a+c>b)){
         if(a==b==c){
             printf("Equilateral");
         }
