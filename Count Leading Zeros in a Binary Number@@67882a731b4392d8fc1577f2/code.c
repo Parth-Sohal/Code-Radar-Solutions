@@ -8,6 +8,6 @@ int main() {
         i = i<<1;
         k+=1;
     }
-    printf("%d",31-k);
+    printf("%d",32-k);
     return 0;
 }
