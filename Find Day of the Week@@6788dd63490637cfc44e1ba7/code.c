@@ -17,7 +17,7 @@ int main() {
             printf("Thrusday");
             break;
         case 5:
-            printf("friday");
+            printf("Friday");
             break;
         case 6:
             printf("Saturday");
