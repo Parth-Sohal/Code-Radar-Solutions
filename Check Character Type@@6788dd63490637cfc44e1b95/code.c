@@ -5,7 +5,7 @@ int main() {
     scanf("%d",&ch);
     if(isalspha(ch)){
         ch = tolower(ch);
-        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
+        if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u'){
             printf("Vowel");
         }
         else{
