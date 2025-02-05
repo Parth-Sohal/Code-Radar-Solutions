@@ -9,7 +9,7 @@ int main() {
             printf("%d",k);
             break;
         }
-        k++;
+        k<<1;;
     }
     return 0;
 }
