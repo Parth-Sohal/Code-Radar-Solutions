@@ -5,11 +5,11 @@ int main() {
     scanf("%d",&n);
     int k = 1;
     while(1){
-        if(n<<k){
+        if(n & k){
             printf("%d",k);
             break;
         }
-        k<<1;;
+        k<<1;
     }
     return 0;
 }
