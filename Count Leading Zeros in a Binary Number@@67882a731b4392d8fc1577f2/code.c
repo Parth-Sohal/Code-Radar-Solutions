@@ -7,6 +7,6 @@ int main() {
         k = k<<1;
         count++;
     }
-    printf("%ld",32-count);
+    printf("%ld",32-count-1);
     return 0;
 }
