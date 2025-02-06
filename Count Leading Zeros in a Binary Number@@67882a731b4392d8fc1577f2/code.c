@@ -1,12 +1,12 @@
 #include <stdio.h>
 int main() {
-    long long int n;
-    scanf("%lld",&n);
-    long long int k = 1,count=0;
+    long int n;
+    scanf("%ld",&n);
+    long int k = 1, count=0;
     while(k<n){
         k = k<<1;
         count++;
     }
-    printf("%lld",31-count);
+    printf("%ld",31-count);
     return 0;
 }
