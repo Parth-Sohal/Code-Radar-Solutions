@@ -2,12 +2,11 @@
 int main() {
     int n;
     scanf("%d",&n);
-    int i = 1;
-    int k = 0;
-    while(i<=n){
-        i = i<<1;
-        k+=1;
+    int k = 1,count=0;
+    while(k<n){
+        k = k<<1;
+        count++;
     }
-    printf("%d",32-k);
+    printf("%d",32-count);
     return 0;
 }
