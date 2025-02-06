@@ -4,8 +4,8 @@ int main() {
     scanf("%ld",&n);
     long int k = 1, count=0;
     while(k<n){
-        k = k<<1;
         count++;
+        k = k<<1;
     }
     printf("%ld",31-count);
     return 0;
