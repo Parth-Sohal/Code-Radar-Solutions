@@ -5,14 +5,11 @@ int main() {
     int n;
     scanf("%d",&n);
     for(int i = 0 ; i < n ; i++){
-        int row ;
-        if(i<n) row = i;
-        else row = 2*n-1 - i-1;
-        for(int j = 0 ;j < n - row - 1 ;j++){
+        for(int space = 0 ; space < n-i-1 ;space++){
             printf(" ");
         }
-        for(int k = 1 ;k <= 2*row+1;k++){
-            printf("%d ",k);
+        for(int j = 1 ; j <= 2*i+1 ;j++){
+            printf("%d ",j);
         }
         printf("\n");
     }
