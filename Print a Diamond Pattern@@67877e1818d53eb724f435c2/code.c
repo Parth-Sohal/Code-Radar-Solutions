@@ -7,7 +7,7 @@ int main() {
     for(int i = 0 ; i < 2*n-1 ; i++){
         int row ;
         if(i<n) row = i;
-        else row = i - n;
+        else row = 2*n-1 - i-1;
         for(int j = 0 ;j < n - row - 1 ;j++){
             printf(" ");
         }
