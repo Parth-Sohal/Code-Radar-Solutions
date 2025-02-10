@@ -12,19 +12,19 @@ int main() {
         for(int j = 0 ; j < 2*i+1 ;j++){
             if(i%2==0){
                 if((i+j)%2==0){
-                    printf("%d",a++);
+                    printf("%d ",a++);
                 }
-                else{
-                    printf(" ");
-                }
+                // else{
+                //     printf(" ");
+                // }
             }
             else if(i%2 != 0){
                 if((i+j)%2!=0){
-                    printf("%d",a++);
+                    printf("%d ",a++);
                 }
-                else{
-                    printf(" ");
-                }
+                // else{
+                //     printf(" ");
+                // }
             }
         }
         printf("\n");
