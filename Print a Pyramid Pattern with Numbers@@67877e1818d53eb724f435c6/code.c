@@ -11,8 +11,8 @@ int main() {
         for(int j = 0 ;j < n - row - 1 ;j++){
             printf(" ");
         }
-        for(int k = 0 ;k < 2*row+1;k++){
-            printf("%d ",++k);
+        for(int k = 1 ;k <= 2*row+1;k++){
+            printf("%d ",k);
         }
         printf("\n");
     }
