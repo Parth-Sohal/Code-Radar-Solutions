@@ -12,7 +12,7 @@ int main() {
             printf(" ");
         }
         for(int k = 0 ;k < 2*row+1;k++){
-            printf("%d ",k);
+            printf("%d ",++k);
         }
         printf("\n");
     }
