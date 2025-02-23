@@ -22,7 +22,7 @@ int main(){
                     arr[j] = -1;
                     count++;
                 }
-                printf("%d %d\n",element count);
+                printf("%d %d\n",element, count);
             }
         }
     }  
