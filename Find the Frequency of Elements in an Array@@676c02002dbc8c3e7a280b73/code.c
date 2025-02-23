@@ -22,7 +22,7 @@ int main(){
                     arr[j] == INT_MIN;
                     count++;
                 }
-                printf("%d %d\n",element cout);
+                printf("%d %d\n",element count);
             }
         }
     }
