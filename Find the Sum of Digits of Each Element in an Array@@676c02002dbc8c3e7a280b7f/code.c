@@ -5,7 +5,7 @@ int sumDigit(int num){
         ans = ans + (num%10);
         num = num/10;
     }
-    return ans;
+    return abs(ans);
 }
 int main(){
     int n;
