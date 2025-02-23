@@ -15,13 +15,10 @@ int main(){
     int j = 0;
     while(i < n){
         if(arr[i]!=0){
-            i++;
-        }
-        else{
             swap(&arr[i],&arr[j]);
             j++;
-            i++;
         }
+        i++;
     } 
     for(int i = 0 ; i < n ; i++){
         printf("%d ",arr[i]);
