@@ -5,7 +5,7 @@ int sumDigit(int num){
         ans = ans + (num%10);
         num = num/10;
     }
-    return abs(ans);
+    return (ans);
 }
 int main(){
     int n;
@@ -15,7 +15,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i = 0 ;i < n ;i++){
-        printf("%d ",sumDigit(arr[i]));
+        printf("%d ",abs(sumDigit(arr[i])));
     }
       
     return 0;
