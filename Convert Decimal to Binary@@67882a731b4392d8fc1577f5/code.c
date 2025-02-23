@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int n,power = 1;
     scanf("%d",&n);
     int result = 0;
-    while(n!=0){
-        result = (n*10) + n%2;
-        n = n/2;
+    while(n){
+        result = result + ((n&1)*power);
+        power = power * 10;
+        n = n>>1;
     }
     printf("%d",result);
     return 0;
