@@ -1,7 +1,7 @@
 #include<stdio.h>
-int abs(int num){
-    return num>=0 ? num : -(num);
-}
+// int abs(int num){
+//     return num>=0 ? num : -(num);
+// }
 int sumDigit(int num){
     int ans = 0;
     while(num){
