@@ -11,19 +11,20 @@ int main(){
     }
 
     for(int i = 0 ; i < n ;i++){
+        int element = arr[i];
+        int count = 1;
         if(arr[i] == INT_MAX){
             continue;
         }
-        else{
-            int count = 1;
+        else{ 
             for(int j = i+1 ;j < n; j++){
-                int element = arr[i];
+                
                 if(arr[j] == element){
                     arr[j] = INT_MAX;
                     count++;
-                }
-                printf("%d %d\n",element, count);
+                }   
             }
+            printf("%d %d\n",element, count);
         }
     }  
 }
