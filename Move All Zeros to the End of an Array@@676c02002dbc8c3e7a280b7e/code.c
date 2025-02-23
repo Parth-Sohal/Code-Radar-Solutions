@@ -13,11 +13,11 @@ int main(){
     }
     int i = 0;
     int j = 0;
-    while(j< n){
+    while(i < n){
         if(arr[i]!=0){
             i++;
         }
-        else if(arr[i]==0){
+        else{
             swap(&arr[i],&arr[j]);
             j++;
             i++;
