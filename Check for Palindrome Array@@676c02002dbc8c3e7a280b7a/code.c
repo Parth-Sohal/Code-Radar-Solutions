@@ -8,14 +8,21 @@ int main(){
     }
     int i = 0 ; 
     int j = n-1;
+    int flag = 1;
     while(i<j){
         if((arr[i++] == arr[j--])){
             continue;
         }
         else{
-            printf("NO");
+            flag = 0;
             break;
         }
+    }
+    if(flag){
+        printf("YES");
+    }
+    else{
+        printf("NO");
     }
     return 0;
 }
