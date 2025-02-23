@@ -12,7 +12,7 @@ int main(){
     for(int i = 0 ;i < n ;i++){
         if(arr[i] < min){
             secondMin = min;
-            min = secondMin;
+            min = arr[i];
         }else if(arr[i]<secondMin && arr[i]!=min){
             secondMin = arr[i];
         }
