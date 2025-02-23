@@ -19,7 +19,7 @@ int main(){
             int count = 1;
             for(int j = i+1 ;j < n; j++){
                 if(arr[j] == element){
-                    arr[j] == -1;
+                    arr[j] = -1;
                     count++;
                 }
                 printf("%d %d\n",element count);
