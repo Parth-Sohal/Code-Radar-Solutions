@@ -20,11 +20,20 @@ int main(){
             count--;
         }
     }
-    if(count == 0){
-        printf("%d",-1);
+
+    int res = 0;
+    for(int i = 0 ; i < n ;i++){
+        if(element == arr[i]){
+            res++;
+        }
     }
-    else{
+
+    if(res > n/2){
         printf("%d",element);
     }
+    else{
+        printf("-1");
+    }
+    
 
 }
