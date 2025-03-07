@@ -9,7 +9,7 @@ int pallindrom(int n){
         reverse = reverse*10 + mod;
         n = n/10;
     }
-    if(storedNum == num){
+    if(storedNum == reverse){
         return true;
     }
     return false;
