@@ -1,7 +1,10 @@
 #include<stdio.h>
 #include<limits.h>
 
+
+
 int pallindrom(int n){
+    if(n<0) return 0;
     int storedNum = n;
     int reverse = 0;
     while(n){
