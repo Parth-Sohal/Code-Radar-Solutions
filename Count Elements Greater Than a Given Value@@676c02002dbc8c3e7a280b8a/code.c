@@ -4,7 +4,7 @@
 int main(){
     int n ;
     int val;
-    scanf("%d",&n,&val);
+    scanf("%d%d",&n,&val);
     int arr[n];
     for(int i = 0 ; i < n ; i++){
         scanf("%d",&arr[i]);
@@ -12,7 +12,7 @@ int main(){
     int count = 0;
     for(int i = 0 ;i < n ;i++){
         if(arr[i] > val){
-            count++;
+            count count + 1;
         }
     }
 
