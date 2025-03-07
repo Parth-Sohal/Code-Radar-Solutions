@@ -30,5 +30,5 @@ int main(){
         }
     }
 
-    printF("%d",count);
+    printf("%d",count);
 }
