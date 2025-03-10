@@ -18,12 +18,17 @@ int main(){
             result[arr[i]] = arr[i];
         }
     }
-    int ans = -1;
+    int ans = 0;
     for(int i = 1 ; i < n+1 ; i++){
         if(result[i] == 0){
             ans = i;
             break;
         }
     }
-    printf("%d",ans);
+    if(ans){
+        printf("%d",ans);
+    }
+    else{
+        printf("%d",ans[n]+1);
+    }
 }
