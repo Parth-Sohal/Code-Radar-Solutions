@@ -11,20 +11,15 @@ int main(){
     for(int i = 0 ; i < n ; i++){
         scanf("%d",&arr[i]);
     }
-    for(int i = 0 ;i < n ;i++){
-        arr[i] = abs(arr[i]);
-    }
-    int min = INT_MIN;
-    int secondMin = INT_MIN;
-    for(int i = 0 ;i < n ;i++){
-        if(arr[i] > (min)){
-            secondMin = min;
-            min = arr[i];
-        }else if(arr[i]>(secondMin) ){
-            secondMin = arr[i];
+    int max = INT_MIN;
+    for(int i = 0 ; i < n ; i++){
+        for(int j = i+1 ; j < n ; j++){
+            int prod = arr[i]*arr[j];
+            if(prod>max){
+                max = prod;
+            }
         }
-
-    } 
-    printf("%d",min*secondMin);
+    }
+    printf("%d",max);
     return 0;
 }
