@@ -18,7 +18,7 @@ int main(){
             }
         }
         if(cond){
-            printf("%d",arr[i]);
+            printf("%d ",arr[i]);
         }
     }
 }
