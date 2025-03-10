@@ -29,6 +29,6 @@ int main(){
         printf("%d",ans);
     }
     else{
-        printf("%d",ans[n]+1);
+        printf("%d",result[n]+1);
     }
 }
