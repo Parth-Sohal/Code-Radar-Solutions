@@ -22,7 +22,7 @@ int main(){
                 count++;
             }
         }
-        if((count >= max)){
+        if((count >= max) && (arr[i]<ans)){
             ans = arr[i];
             max = count;
         }
