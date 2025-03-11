@@ -20,7 +20,7 @@ int main(){
                 count++;
             }
         }
-        if(count > max){
+        if(count >= max){
             max = arr[i];
         }
     }
