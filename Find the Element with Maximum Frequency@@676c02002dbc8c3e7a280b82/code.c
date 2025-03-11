@@ -25,5 +25,5 @@ int main(){
             max = count;
         }
     }
-    printf("%d",max);
+    printf("%d",ans);
 }
