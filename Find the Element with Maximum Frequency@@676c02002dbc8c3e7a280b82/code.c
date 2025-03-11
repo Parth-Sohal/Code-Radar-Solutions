@@ -9,7 +9,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    int ans = 0;
+    int ans = INT_MAX;
     int max = -1;
     for(int i = 0 ; i <  n ; i++){
         if(arr[i] == INT_MIN)continue;
@@ -20,8 +20,9 @@ int main(){
                 count++;
             }
         }
-        if(count >= max){
-            max = arr[i];
+        if((count >= max) && (ans<arr[i])){
+            ans = arr[i];
+            max = count;
         }
     }
     printf("%d",max);
