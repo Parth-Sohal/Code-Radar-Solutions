@@ -22,9 +22,14 @@ int main(){
                 count++;
             }
         }
-        if((count >= max) && (arr[i]<ans)){
-            ans = arr[i];
+        if((count > max)){
             max = count;
+            ans = arr[i];
+        }
+        if(count == max){
+            if(arr[i] < ans){
+                ans = arr[i];
+            }
         }
     }
     printf("%d",ans);
