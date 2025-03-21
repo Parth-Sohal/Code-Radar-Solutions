@@ -33,13 +33,14 @@ int main(){
     for(int i = 0 ; i < n ; ++i){
         scanf("%d",&arr[i]);
     }
+    int ans = -1;
 
     for(int i = 0 ; i < n ;i++){
         int cond = 0;
         for(int j = i+1 ;j<n;j++){
             if(arr[i] == arr[j]){
                 cond = 1;
-                printf("%d",arr[i]);
+                ans = arr[i];
                 break;
             }
         }
@@ -47,5 +48,7 @@ int main(){
             break;
         }
     }
+
+    printf("%d",ans);
 
 }
