@@ -21,5 +21,5 @@ void bubbleSort(int arr[] ,int n){
             }
         }
     }
-    printArray(arr,n);
+    // printArray(arr,n);
 }
