@@ -48,6 +48,10 @@ int main(){
         }
     }
 
-    printf("%d %d",fst,last);
-
+    if(n==1){
+        printf("%d %d",-1,-1);
+    }
+    else{
+        printf("%d %d",fst,last);
+    }
 }
