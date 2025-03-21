@@ -14,14 +14,22 @@ void printArray(int arr[] , int n){
     }
 }
 void bubbleSort(int arr[] ,int n){
-    for(int i = 0 ; i < n-1 ;i++){
+    // for(int i = 0 ; i < n-1 ;i++){
+    //     for(int j = 0 ; j < n - i - 1 ; j++){
+    //         if(arr[j] > arr[j+1]){
+    //             swap(&arr[j],&arr[j+1]);
+    //         }
+    //     }
+    // }
+    // printArray(arr,n);
+    for(int i = 0 ; i < arr.size() ;i++){
         int e = 0;
-        for(int j = e+1 ; j < n - i ; j++){
+        for(int j = e+1 ; j < arr.size() - i ;j++){
             if(arr[e] > arr[j]){
-                swap(&arr[e],&arr[j+1]);
+                swap(arr[e],arr[j]);
             }
             e++;
         }
+        
     }
-    // printArray(arr,n);
 }
