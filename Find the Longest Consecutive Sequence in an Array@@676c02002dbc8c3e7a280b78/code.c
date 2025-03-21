@@ -32,6 +32,7 @@ int main(){
     for(int i = 0 ; i < n ; ++i){
         scanf("%d",&arr[i]);
     }
+    
     selectionSort(arr,n);
     int count = 1;
 
@@ -40,7 +41,5 @@ int main(){
             count++;
         }
     }
-
     printf("%d",count);
-
 }
