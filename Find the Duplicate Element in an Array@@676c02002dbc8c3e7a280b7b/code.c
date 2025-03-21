@@ -20,7 +20,7 @@ int main(){
     for(int i = 0 ; i < n ;i++){
         int index = arr[i];
         if(arr[abs(index)] < 0){
-            ans = arr[i];
+            ans = abs(arr[i]);
             break;
         }
         else{
