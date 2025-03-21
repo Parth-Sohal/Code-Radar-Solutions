@@ -22,9 +22,9 @@ void bubbleSort(int arr[] ,int n){
     //     }
     // }
     // printArray(arr,n);
-    for(int i = 0 ; i < arr.size() ;i++){
+    for(int i = 0 ; i < n ;i++){
         int e = 0;
-        for(int j = e+1 ; j < arr.size() - i ;j++){
+        for(int j = e+1 ; j < n - i ;j++){
             if(arr[e] > arr[j]){
                 swap(arr[e],arr[j]);
             }
