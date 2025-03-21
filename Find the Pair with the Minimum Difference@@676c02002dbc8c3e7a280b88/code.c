@@ -49,7 +49,7 @@ int main(){
     }
 
     if(n==1){
-        printf("%d %d",-1,-1);
+        printf("%d",-1);
     }
     else{
         printf("%d %d",fst,last);
