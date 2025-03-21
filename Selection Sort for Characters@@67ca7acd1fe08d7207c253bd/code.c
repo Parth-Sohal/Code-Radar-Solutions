@@ -8,7 +8,7 @@ void swap(char* ptr1 , char* ptr2){
 
 void printArray(char arr[],int n){
     for(int i = 0 ; i < n ; ++i){
-        printf("%d ",arr[i]);
+        printf("%c ",arr[i]);
     }
 }
 
