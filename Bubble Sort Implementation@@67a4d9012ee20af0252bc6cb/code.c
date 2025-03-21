@@ -5,18 +5,15 @@ void swap(int* ptr1 , int* ptr2){
     *ptr1 = *ptr2;
     *ptr2 = temp;
     return;
+
 }
 
-int main(){
-    int n;
-    int arr[n];
+void printArray(int arr[] , int n){
     for(int i = 0 ; i < n ; i++){
-        scanf("%d",&arr[i]);
+        printf("%d ",arr[i]);
     }
-    
-
-    // bubble sort
-
+}
+void bubbleSort(int arr[] ,int n){
     for(int i = 0 ; i < n-1 ;i++){
         for(int j = 0 ; j < n - i - 1 ; j++){
             if(arr[j] > arr[j+1]){
@@ -24,10 +21,5 @@ int main(){
             }
         }
     }
-
-    for(int i = 0 ; i < n ; i++){
-        printf("%d ",arr[i]);
-    }
-
-
+    printArray(arr,n);
 }
