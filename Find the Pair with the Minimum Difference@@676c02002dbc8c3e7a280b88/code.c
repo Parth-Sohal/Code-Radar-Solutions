@@ -42,8 +42,8 @@ int main(){
     {
         int current = arr[i] - arr[i-1];
         if(current < min){
-            fst = arr[i];
-            last = arr[j];
+            fst = arr[i-1];
+            last = arr[i];
         }
     }
 
