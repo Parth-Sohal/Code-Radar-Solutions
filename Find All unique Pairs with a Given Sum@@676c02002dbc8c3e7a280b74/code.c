@@ -11,13 +11,27 @@ int main(){
     int target ;
     scanf("%d",&target);
 
-    for(int i = 0 ; i < n ; i++){
+    int result[n*n][2];
+    int i = 0;
+    int count = 0;
+
+    for(int i= 0 ; i < n ; i++){
         for(int j = i+1 ; j < n ;j++){
-            if(arr[i]+arr[j] == target && arr[j]!=arr[j-1]) {
-                printf("%d %d\n",arr[i],arr[j]);
+            if(arr[i]+arr[j]==target){
+                reuslt[i][0] = arr[i];
+                result[i][1] = arr[j];
+                count++;
+                i++;
             }
         }
     }
+
+    for(int i = 0 ; i < count ;i++){
+        for(int j = 0 ; j < 2 ;j++){
+            pritf("%d %d\n",arr[i][j]);
+        }
+    }
+
 
     return 0;
 }
