@@ -18,7 +18,7 @@ int main(){
     for(int i= 0 ; i < n ; i++){
         for(int j = i+1 ; j < n ;j++){
             if(arr[i]+arr[j]==target){
-                reuslt[i][0] = arr[i];
+                result[i][0] = arr[i];
                 result[i][1] = arr[j];
                 count++;
                 i++;
@@ -28,8 +28,9 @@ int main(){
 
     for(int i = 0 ; i < count ;i++){
         for(int j = 0 ; j < 2 ;j++){
-            pritf("%d %d\n",arr[i][j]);
+            pritf("%d ",result[i][j]);
         }
+        printf("\n");
     }
 
 
