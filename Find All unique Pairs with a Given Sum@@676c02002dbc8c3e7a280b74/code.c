@@ -12,16 +12,16 @@ int main(){
     scanf("%d",&target);
 
     int result[n*n][2];
-    int i = 0;
+    int k = 0;
     int count = 0;
 
     for(int i= 0 ; i < n ; i++){
         for(int j = i+1 ; j < n ;j++){
             if(arr[i]+arr[j]==target){
-                result[i][0] = arr[i];
-                result[i][1] = arr[j];
+                result[k][0] = arr[i];
+                result[k][1] = arr[j];
                 count++;
-                i++;
+                k++;
             }
         }
     }
