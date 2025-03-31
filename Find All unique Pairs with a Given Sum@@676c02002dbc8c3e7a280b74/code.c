@@ -28,7 +28,7 @@ int main(){
 
     for(int i = 0 ; i < count ;i++){
         for(int j = 0 ; j < 2 ;j++){
-            pritf("%d ",result[i][j]);
+            printf("%d ",result[i][j]);
         }
         printf("\n");
     }
